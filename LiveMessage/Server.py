@@ -24,10 +24,10 @@ while True:
     while True:
         ClientSocket.send(bytes("Send your message",'UTF-8'))
 
-        # Bytes are needed to be decoded to be read
-
         msg = ClientSocket.recv(1024)
         msg = msg.decode('utf-8')
         print(msg)
+
+        
 
 
