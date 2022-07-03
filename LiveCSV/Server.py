@@ -20,7 +20,7 @@ while True:
 
     csv_file = "Names.csv"
     try:
-        with open('Received.csv', 'a') as csvfile:
+        with open('receiver.csv', 'a') as csvfile:
             writer = csv.writer(csvfile)
             for i in data:
                 writer.writerow(i)
